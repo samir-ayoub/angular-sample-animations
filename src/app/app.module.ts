@@ -4,10 +4,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
-import { BasicComponent } from './basic/basic.component';
+import { BasicComponent } from './basics/basic/basic.component';
 import { TodoModule } from './todo/todo.module';
-import { TransitionComponent } from './transition/transition.component';
-import { CallbackComponent } from './callback/callback.component';
+import { TransitionComponent } from './basics/transition/transition.component';
+import { CallbackComponent } from './basics/callback/callback.component';
+import { BasicsComponent } from './basics/basics.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CallbackComponent } from './callback/callback.component';
     BasicComponent,
     TransitionComponent,
     CallbackComponent,
+    BasicsComponent,
   ],
   imports: [
     BrowserModule,
