@@ -1,4 +1,4 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   trigger,
   state,
@@ -9,9 +9,9 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-todo',
+  templateUrl: './todo.component.html',
+  styleUrls: ['./todo.component.scss'],
   animations: [
     // trigger('focusPanel', [
     //   state('inactive', style({
@@ -58,7 +58,7 @@ import {
     ])
   ]
 })
-export class AppComponent {
+export class TodoComponent {
   state: string = 'inactive';
 
   ourItems = [

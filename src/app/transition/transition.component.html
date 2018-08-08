@@ -1,0 +1,14 @@
+<div class="transition-content">
+  <button class="app-button" (click)="toggleState()">Adicionar Item</button>
+  <div class="row">
+    <div class="col-md-12">
+      <div 
+        *ngFor="let item of items" 
+        class="item-container" 
+        [@myTrigger]="state">
+        <div class="identifier"></div>
+        <p>{{ item }}</p>
+      </div>
+    </div>
+  </div>
+</div>
